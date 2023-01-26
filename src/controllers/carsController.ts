@@ -2,6 +2,7 @@ import httpStatus from "http-status";
 
 import { Request, Response } from "express";
 import carService from "../services/carService.js";
+import { cars } from "@prisma/client";
 
 async function getAllCars(req: Request, res: Response) {
   try {
@@ -29,7 +30,7 @@ async function createCar(req: Request, res: Response) {
   const { model, licensePlate, year, color } = req.body;
 
   try {
-    await carService.createCar(model, licensePlate, year, color)
+    await carService.createCar(model, licensePlate, year , color)
     res.sendStatus(httpStatus.CREATED);
   } catch (e) {
     console.log(e);
