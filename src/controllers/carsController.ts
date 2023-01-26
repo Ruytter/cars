@@ -1,8 +1,6 @@
 import httpStatus from "http-status";
-
 import { Request, Response } from "express";
 import carService from "../services/carService.js";
-import { cars } from "@prisma/client";
 
 async function getAllCars(req: Request, res: Response) {
   try {
@@ -30,7 +28,8 @@ async function createCar(req: Request, res: Response) {
   const { model, licensePlate, year, color } = req.body;
 
   try {
-    await carService.createCar(model, licensePlate, year , color)
+    await carService.createCar(model, licensePlate, year, color);
+
     res.sendStatus(httpStatus.CREATED);
   } catch (e) {
     console.log(e);
@@ -47,7 +46,7 @@ async function deleteCar(req: Request, res: Response) {
 
   try {
     await carService.deleteCar(carId);
-    res.send(httpStatus.OK);
+    res.sendStatus(httpStatus.OK);
   } catch (e) {
     console.log(e);
     if (e.name === "NotFoundError") {
@@ -62,7 +61,7 @@ const carController = {
   getAllCars,
   getSpecificCar,
   createCar,
-  deleteCar
-}
+  deleteCar,
+};
 
 export default carController;

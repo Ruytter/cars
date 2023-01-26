@@ -48,7 +48,7 @@
     "method": "POST",
     "sortNum": 30000,
     "created": "2023-01-25T23:16:31.387Z",
-    "modified": "2023-01-26T19:02:24.396Z",
+    "modified": "2023-01-26T20:38:29.347Z",
     "headers": [
       {
         "name": "Authorization",
@@ -69,11 +69,11 @@
     "colId": "ef2ccdb9-3b98-4868-b017-e6f9659c7028",
     "containerId": "",
     "name": "DELETE cars/id",
-    "url": "localhost:5000/cars/1",
+    "url": "localhost:5000/cars/10",
     "method": "DELETE",
     "sortNum": 40000,
     "created": "2023-01-25T23:16:31.388Z",
-    "modified": "2023-01-26T19:06:13.349Z",
+    "modified": "2023-01-26T20:43:35.858Z",
     "headers": [
       {
         "name": "Authorization",

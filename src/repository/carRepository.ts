@@ -1,4 +1,3 @@
-import {cars} from '@prisma/client';
 import prisma from "../config/database.js";
 
 async function getCars() {
@@ -14,7 +13,7 @@ async function getCar(id: number) {
 }
 
 async function getCarWithLicensePlate(licensePlate: string) {
-  return prisma.cars.findUniqueOrThrow({
+  return prisma.cars.findFirst({
     where: {
       licensePlate
     }
@@ -22,32 +21,19 @@ async function getCarWithLicensePlate(licensePlate: string) {
 }
 
 async function createCar(model: string, licensePlate: string, year: string, color: string) {
-  prisma.cars.create({
+
+  await prisma.cars.create({
     data: {
-      color: color,
       model:model, 
       licensePlate: licensePlate, 
-      year: String(year), 
+      year,
+      color 
     }
   })
-
-  // await prisma.cars.create({
-  //   data: {
-  //     color: color,
-  //     model:model, 
-  //     licensePlate: licensePlate, 
-  //     year: String(year), 
-  //   }
-  // })
-  // await db.query(
-  //   `INSERT INTO cars (model, "licensePlate", year, color)
-  //    VALUES ($1, $2, $3, $4)`,
-  //   [model, licensePlate, year, color]
-  // );
 }
 
 async function deleteCar(id: number) {
-  prisma.cars.delete({
+  await prisma.cars.delete({
     where:{
       id
     }
