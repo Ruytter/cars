@@ -1,0 +1,87 @@
+[
+  {
+    "_id": "7294ef2a-5bda-43ac-9b91-0f8a46232a84",
+    "colId": "ef2ccdb9-3b98-4868-b017-e6f9659c7028",
+    "containerId": "",
+    "name": "GET cars",
+    "url": "localhost:5000/cars",
+    "method": "GET",
+    "sortNum": 10000,
+    "created": "2023-01-25T23:16:31.385Z",
+    "modified": "2023-01-25T23:16:31.385Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.PcmVIPbcZl9j7qFzXRAeSyhtuBnHQNMuLHsaG5l804A",
+        "isDisabled": true
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "8d1b4de4-2a46-4da3-af98-1fdf9a352f8d",
+    "colId": "ef2ccdb9-3b98-4868-b017-e6f9659c7028",
+    "containerId": "",
+    "name": "GET cars/id",
+    "url": "localhost:5000/cars/9",
+    "method": "GET",
+    "sortNum": 20000,
+    "created": "2023-01-25T23:16:31.386Z",
+    "modified": "2023-01-25T23:16:31.386Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.PcmVIPbcZl9j7qFzXRAeSyhtuBnHQNMuLHsaG5l804A",
+        "isDisabled": true
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "59fac923-1d9f-4b19-8fe7-6947e5290a39",
+    "colId": "ef2ccdb9-3b98-4868-b017-e6f9659c7028",
+    "containerId": "",
+    "name": "POST cars",
+    "url": "localhost:5000/cars",
+    "method": "POST",
+    "sortNum": 30000,
+    "created": "2023-01-25T23:16:31.387Z",
+    "modified": "2023-01-25T23:16:31.387Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.PcmVIPbcZl9j7qFzXRAeSyhtuBnHQNMuLHsaG5l804A",
+        "isDisabled": true
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"model\": \"SAVEIRO\",\n  \"licensePlate\": \"AKI8877\",\n  \"year\": 2010,\n  \"color\": \"CINZA\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "24e202a3-9855-488c-b100-2fc7ced4c2c5",
+    "colId": "ef2ccdb9-3b98-4868-b017-e6f9659c7028",
+    "containerId": "",
+    "name": "DELETE cars/id",
+    "url": "localhost:5000/cars/9",
+    "method": "DELETE",
+    "sortNum": 40000,
+    "created": "2023-01-25T23:16:31.388Z",
+    "modified": "2023-01-25T23:16:31.388Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.PcmVIPbcZl9j7qFzXRAeSyhtuBnHQNMuLHsaG5l804A",
+        "isDisabled": true
+      }
+    ],
+    "params": [],
+    "tests": []
+  }
+]
